@@ -1,6 +1,6 @@
-<script>
-var current = null;
-current=document.querySelector('#email').addEventListener('focus', function(e) {
+
+var current=document.querySelector('#email');
+current.addEventListener('focus', function(e) {
   if (current) current.pause();
   current = anime({
     targets: 'path',
@@ -16,7 +16,8 @@ current=document.querySelector('#email').addEventListener('focus', function(e) {
     }
   });
 });
-current=document.querySelector('#password').addEventListener('focus', function(e) {
+current=document.querySelector('#password');
+current.addEventListener('focus', function(e) {
   if (current) current.pause();
   current = anime({
     targets: 'path',
@@ -32,7 +33,8 @@ current=document.querySelector('#password').addEventListener('focus', function(e
     }
   });
 });
-current=document.querySelector('#submit').addEventListener('focus', function(e) {
+current=document.querySelector('#submit');
+current.addEventListener('focus', function(e) {
   if (current) current.pause();
   current = anime({
     targets: 'path',
@@ -48,4 +50,3 @@ current=document.querySelector('#submit').addEventListener('focus', function(e) 
     }
   });
 });
-</script>
