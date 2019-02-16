@@ -1,8 +1,8 @@
 
-var current=document.querySelector('#email');
-current.addEventListener('focus', function(e) {
-  if (current) current.pause();
-  current = anime({
+var current1=document.querySelector('#email');
+current1.addEventListener('focus', function(e) {
+  if (current1) current1.pause();
+  current1 = anime({
     targets: 'path',
     strokeDashoffset: {
       value: 0,
@@ -16,10 +16,10 @@ current.addEventListener('focus', function(e) {
     }
   });
 });
-current=document.querySelector('#password');
-current.addEventListener('focus', function(e) {
-  if (current) current.pause();
-  current = anime({
+var current2=document.querySelector('#password');
+current2.addEventListener('focus', function(e) {
+  if (current2) current2.pause();
+  current2 = anime({
     targets: 'path',
     strokeDashoffset: {
       value: -336,
@@ -33,10 +33,10 @@ current.addEventListener('focus', function(e) {
     }
   });
 });
-current=document.querySelector('#submit');
-current.addEventListener('focus', function(e) {
-  if (current) current.pause();
-  current = anime({
+var current3=document.querySelector('#submit');
+current3.addEventListener('focus', function(e) {
+  if (current3) current3.pause();
+  current3 = anime({
     targets: 'path',
     strokeDashoffset: {
       value: -730,
